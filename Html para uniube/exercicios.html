@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio2</title>
+</head>
+
+
+<body>
+    <h1 style="text-align:center">Exercícios HTML</h1>
+    <table class="tabela1">
+        <tr> 
+            <b>Disciplina de análise de Matemática</b><br><br>
+            <caption>Notas de 1999/2000</caption>  
+            <th>Aluno</th>
+            <th>Frequência</th>
+            <th>1ª Chamada</th>
+            <th>2ª Chamada</th>
+            <th>Final</th>
+        </tr>
+        <tr>
+            <td class="coresr">Ana Maria</td>
+            <td>12.5</td>
+            <td>14.2</td>
+            <td></td>
+            <td class="coresv"><b>14</b></td>
+        </tr>
+        <tr>
+            <td class="coresr">João</td>
+            <td>11.5</td>
+            <td>12.2</td>
+            <td></td>
+            <td class="coresv"><b>13</b></td>
+        </tr>
+        <tr>
+            <td class="coresr">Rui Manuel</td>
+            <td>12.5</td>
+            <td>13.2</td>
+            <td></td>
+            <td class="coresv"><b>13</b></td>
+        </tr>
+        <tr>
+            <th colspan="4px">Média</th>
+            <td class="semcor"><b>13.3</b></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<br><br><br><br><br>
+
+<body>
+    <table>
+        <caption>Notas de 1999/2000</caption>
+        <tr class="tabela2"> 
+            <b>Disciplina de análise de Matemática</b><br><br>              
+            <th >Aluno</th>
+            <th>Frequência</th>
+            <th>1ª Chamada</th>
+            <th>2ª Chamada</th>
+            <th>Final</th>
+        </tr>
+        <tr class="tabela2">
+            <td class="coresr">Ana Maria</td>
+            <td>12.5</td>
+            <td>14.2</td>
+            <td></td>
+            <td class="coresv"><b>14</b></td>
+        </tr>
+        <tr class="tabela2">
+            <td class="coresr">João</td>
+            <td>11.5</td>
+            <td>12.2</td>
+            <td></td>
+            <td class="coresv"><b>13</b></td>
+        </tr>
+        <tr class="tabela2">
+            <td class="coresr">Rui Manuel</td>
+            <td>12.5</td>
+            <td>13.2</td>
+            <td></td>
+            <td class="coresv"><b>13</b></td>
+        </tr>
+        <tr class="tabela2">
+            <th colspan="4px">Média</th>
+            <td class="semcor"><b>13.3</b></td>
+        </tr>
+    </table>
+</body>
+
+<br><br><br><br><br>
+
+<table class="tabela3">
+    <caption class="static">Tabela 1. Estatísticas.</caption>
+    <tr>
+        <th rowspan="2" colspan="2"></th>
+        <th colspan="6" class="coresa">Demografia</th>
+    </tr>
+    <tr class="coresa">
+        <th>Homens</th>
+        <th>Meninas</th>
+        <th>Professor</th>
+    </tr>
+    <tr class="coresa">
+        <th rowspan="4">Turmas</th>
+        <th style="text-align: left;">A</th>
+        <td class="coresb">20</td>
+        <td class="coresb">5</td>
+        <td class="coresb">João<br>Pedro</td>
+    </tr>
+    <tr class="coresa">
+        <th style="text-align: left;">B</th>
+        <td class="coresb">21</td>
+        <td class="coresb">3</td>
+        <td class="coresb">idem</td>
+    </tr>
+    <tr class="coresa">
+        <th style="text-align: left;">C</th>
+        <td class="coresb">25</td>
+        <td class="coresb"d>2</td>
+        <td class="coresb" >Maria<br>João</td>
+    </tr>
+    <tr class="coresa">
+        <th style="text-align: left;">D</th>
+        <td class="coresb">20</td>
+        <td class="coresb">1</td>
+        <td class="coresb">idem</td>
+    </tr>
+    <tr class="coresa">
+        <th colspan="2">Total</th>
+        <td class="coresb">86</td>
+        <td class="coresb">14</td>
+        <td class="coresb">2</td>
+    </tr>
+</table>
+
+
+<style>
+    
+.tabela1, th, td{
+    border:1px solid black;
+    text-align:center;
+}
+
+.coresr{
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+}
+
+.coresa,td{
+    background-color: yellow;
+}
+
+.coresv{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+
+.semcor{
+    background-color: white;
+    color: blue;
+}
+
+.coresb{
+    color: blue;
+}
+
+th{
+    color: blue;
+}
+
+td{
+    color: green;
+}
+
+.tabela2{
+    height: 27px;
+}
+
+.branco{
+    color: white;
+}
+
+.tabela3{
+    width:23%;
+    height: 250px;
+}
+
+.static{
+    caption-side: bottom;
+    color: blue;
+}
+</style>
+
+</html>

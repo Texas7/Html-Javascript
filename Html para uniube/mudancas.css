@@ -1,0 +1,55 @@
+.tabela1, th, td{
+    border:1px solid black;
+    text-align:center;
+}
+
+.coresr{
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+}
+
+.coresa,td{
+    background-color: yellow;
+}
+
+.coresv{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+
+.semcor{
+    background-color: white;
+    color: blue;
+}
+
+.coresb{
+    color: blue;
+}
+
+th{
+    color: blue;
+}
+
+td{
+    color: green;
+}
+
+.tabela2{
+    height: 27px;
+}
+
+.branco{
+    color: white;
+}
+
+.tabela3{
+    width:50%;
+    height: 250px;
+}
+
+.static{
+    caption-side: bottom;
+    color: blue;
+}

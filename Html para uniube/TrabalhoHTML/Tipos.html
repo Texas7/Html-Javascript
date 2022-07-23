@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecimentos para CyberSecurity</title>
+</head>
+<body>
+    <div class="loader">
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+
+
+    </div>
+    <ul class="ula">
+        <li><a href="pacesso.html">Home</a></li>
+        <li><a href="pag1.html">Apresentação</a></li>
+        <li><a href="pag2.html">Malwares</a></li>
+        <li><a href="pag3.html" class="active">Criptografia</a></li>
+        <ul class="ulb animationbar">
+            <li><a href="#Chave_simetrica">Simétrica</a></li>
+            <li><a href="#Chave_assimetrica">Assimétrica</a></li>
+            <li><a href="#Hash">Hash</a></li>
+            <li><a href="pag3.html">Voltar</a></li>
+        </ul>
+        <li><a href="pag4.html">Security cube</a></li>
+        <li><a href="pag5.html">AAA</a></li>
+    </ul>
+
+    <div class="container1">
+        <p class="size1">Criptografia</p>
+
+        <div class="container1 altura">            
+            <p class="size2">Seus tipos</p>
+
+            <div class="container2 altura1">
+                <a name="Chave_simetrica"></a>
+                <table><tr><th>Chave simétrica</th></tr></table>
+                <p class="txt">A chave simétrica é o modelo mais comum e simples. Nela, uma mesma chave é utilizada tanto pelo emissor como pelo receptor da mensagem — ou seja, ela é usada tanto para a codificação como para a descodificação dos dados.
+                    Esse tipo de criptografia foi responsável por lançar as bases para outros modelos, como o DES, IDEA e o AES.
+                <input type="button" value=">> Exemplos" id="button" onclick="PaginaS();"></p>
+                
+                    <div class="container2 altura2">
+                        <a name="Chave_assimetrica"></a>
+                        <table><tr><th>Chave assimétrica</th></tr></table>
+                        <p class="txt">Também conhecida como “chave pública”, trabalha tanto no modo privado quanto no público. No primeiro, a chave é secreta. Já no modelo público, o usuário deverá criar uma chave de codificação e encaminhá-la para o receptor, para que possa ter acesso ao conteúdo.
+                            <input type="button" value=">> Exemplos" id="button" onclick="PaginaA();">    
+                        </p>
+
+                        <div class="container2 altura3">
+                            <a name="HASH"></a>
+                            <table><tr><th>Funções Hash</th></tr></table>
+                            <p class="txt">Não utiliza chaves mas sim um valor matemático computado sobre o texto plano, usando algoritmos. O valor encriptado pelo hash possui um tamanho fixo.
+                                <input type="button" value=">> Exemplos" id="button" onclick="PaginaH();">
+                            </p>                   
+                            
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="css/barra.css" rel="stylesheet">
+    <script src="javascript/validar.js"></script>
+</body>
+</html>

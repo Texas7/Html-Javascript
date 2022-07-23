@@ -1,0 +1,17 @@
+html, body{
+    margin: 0%;
+    background-color: rgb(255, 208, 0);
+}
+
+#barra{
+    display: inline;
+    position: absolute;
+    background-color:bisque;
+    width:100%;
+    font-size: xx-large;
+}
+
+#porco{
+    float: right;
+    max-height: 40px;
+}

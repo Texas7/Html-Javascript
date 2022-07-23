@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    Exercicios:<br><br>
+    <input type="button" value="Exercicio 1" onclick="ex1()">
+    <br><br>
+    <input type="button" value="Exercicio 2" onclick="ex2()">
+    <br><br>
+    <input type="button" value="Exercicio 3" onclick="ex3()">
+    <br><br>
+    <input type="button" value="Exercicio 4" onclick="ex4()">
+    <br><br>
+    <input type="button" value="Exercicio 5" onclick="ex5()">
+    <br><br>
+    <input type="button" value="Exercicio 6" onclick="ex6()">
+    <input type="button" value="Redefinir" onclick="history.go(0)">
+    <br>
+    <p id="ex6"></p>
+    <input type="button" value="Exercicio 7" onclick="ex7()">
+    <input type="button" value="Redefinir" onclick="history.go(0)">
+    <br>
+    <p id="ex7"></p>
+    <input type="button" value="Exercicio 8" onclick="ex8()">
+    <input type="button" value="Redefinir" onclick="history.go(0)">
+    <p id="ex8"></p>
+    <input type="button" value="Exercicio 9" onclick="ex9()">
+    <br><br>
+    <input type="button" value="Exercicio 10" onclick="ex10()">
+    <br><br>
+    <input type="button" value="Exercicio 11" onclick="ex11()">
+    <input type="button" value="Redefinir" onclick="history.go(0)">
+    <br>
+    <p id="ex11"></p>
+    <input type="button" value="Exercicio 12" onclick="ex12()">
+    <input type="button" value="Redefinir" onclick="history.go(0)">
+    <p id="ex12"></p>
+    <input type="button" value="Exercicio 13" onclick="ex13()">
+    <input type="button" value="Redefinir" onclick="history.go(0)">
+    <p id="ex13"></p> 
+    <input type="button" value="Exercicio 14" onclick="ex14()">
+    <br><br>
+    <input type="button" value="Exercicio 15" onclick="ex15()">
+    <input type="button" value="Redefinir" onclick="history.go(0)">
+    <p id="ex15"></p>
+    <input type="button" value="Exercicio 16" onclick="ex16()">
+    <input type="button" value="Redefinir" onclick="history.go(0)">
+    <p id="ex16"></p>
+    <input type="button" value="Exercicio 17" onclick="ex17()">
+    <input type="button" value="Redefinir" onclick="history.go(0)">
+    <p id="ex17"></p>
+    <input type="button" value="Exercicio 18" onclick="ex18()">
+    <input type="button" value="Redefinir" onclick="history.go(0)">
+    <p id="ex18"></p>
+</body>
+<script>
+function ex1(){
+    let x, y;
+    x = 10;
+    y = 13;
+    valor = x + y;
+
+    alert(x +" + "+ y +" = "+ valor);
+}    
+
+function ex2(){
+    let valor1 = prompt("Valor 1:");
+    let valor2 = prompt("Valor 2:");
+
+    resultado = valor1/valor2
+    alert(valor1 +" / "+ valor2 +" = "+ resultado);
+}
+
+function ex3(){
+    let valor = prompt("Digito o valor: ");
+
+    metade = valor / 2;
+    dobro = valor * 2;
+    
+    alert("Metade de "+valor+" é "+metade+"\nDobro de "+valor+" é "+dobro);
+}
+
+function ex4(){
+    let nome = prompt("Digite seu nome: ");
+    let idade = prompt("Digite sua idade: ");
+
+    idade30 = parseInt(idade) + 30;
+
+    alert("Nome: "+nome+"\nSua idade daqui a 30 anos: "+idade30)
+}
+
+function ex5(){
+    let nota1 = prompt("Nota 1: ");
+    let nota2 = prompt("Nota 2: ");
+    let nota3 = prompt("Nota 3: ");
+
+    media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3))/3;
+
+    alert("Média das notas: "+media);
+}
+
+function ex6(){
+    let cont;
+
+    for (cont = 0; cont <= 100; cont++){
+        let res = document.getElementById("ex6");
+        res.innerHTML += `${cont}<br>`;
+    }
+}
+
+function ex7(){
+    let cont;
+
+    for (cont = 0; cont<= 100; cont++){
+        if ((cont % 2)== 0){
+            let res = document.getElementById("ex7");
+            res.innerHTML += `${cont}<br>`;
+        }   
+    }
+}
+
+function ex8(){
+    let cont;
+
+for (cont = 0; cont<= 100; cont++){
+    if ((cont % 2)== 1){
+        let res = document.getElementById("ex8");
+        res.innerHTML += `${cont}<br>`;
+    }
+}
+}
+
+function ex9(){
+    let idade = prompt("Sua idade");
+
+    if(idade < 18){alert("Menor de idade");}
+    else{alert("Maior de idade");}
+}
+
+function ex10(){
+    let idade = prompt("Sua idade");
+
+    if(idade <= 12){alert("Criança");}
+    else if(idade > 12 && idade < 18){alert("Adolescente");}
+    else if(idade > 17 && idade < 65){alert("Adulto");}
+    else{alert("Idoso");}
+}
+
+function ex11(){
+    let numero = 100;
+    let cont = 0;
+    let quantidade = 0;
+    let soma = 0;
+
+    while(numero > 50){
+        numero = prompt("Digite um numero menor que 50: ")
+        let res = document.getElementById("ex11");
+        res.innerHTML = `<b>Numeros pares: </b><br>`
+        while (cont <= numero){
+            if((cont % 2)== 0){
+                res.innerHTML += `${cont}<br>`;
+                quantidade ++;
+                soma += cont;
+            }
+            cont += 1;
+        }
+        res.innerHTML += `<b>Total de numeros pares: ${quantidade}</b><br>`;
+        res.innerHTML += `<b>Soma dos numeros pares: ${soma}</b>`;
+    }
+}
+
+function ex12(){
+    let res = document.getElementById("ex12");
+    let numero = 0;
+    let resultado = 0;
+
+    while(numero < 1 || numero > 10){
+        numero = prompt("Digite um numero de 1 a 10: ");
+
+        for(cont = 1; cont <= 10; cont++){
+            resultado = numero * cont;
+            res.innerHTML += `${numero} * ${cont} = ${resultado}<br>`
+        }
+    }
+}   
+
+function ex13(){
+    let res = document.getElementById("ex13");
+    let numero = null;
+    let digitados = 1, pares = 0, impares = 0;
+
+    while(numero != 0){
+        numero = prompt("Digite um numero: ");
+
+        if(numero != 0){digitados++;}
+        if((numero % 2) == 0){pares++;}
+        else{impares++;}
+
+        res.innerHTML = `Quantidade de numeros digitados: ${digitados}<br>`;
+        res.innerHTML += `Quantidade de numeros pares: ${pares}<br>`;
+        res.innerHTML += `Quantidade de numeros impares: ${impares}`;
+    }
+}
+
+function ex14(){
+    let sexo = prompt("Digite seu sexo M ou F: ");
+
+    if(sexo == "M" || sexo == "m"){alert("Masculino");}
+    else if(sexo == "F" || sexo == "f"){alert("Feminino");}
+    else{alert("Invalido");}
+}
+
+function ex15(){
+    let res = document.getElementById("ex15");
+    let cont = 0;
+
+    let numeros = prompt("Digite 3 numeros divididos por espaço: ");
+    const valoresArray = numeros.split(" ");
+
+    let numero1 = valoresArray[0];
+    let numero2 = valoresArray[1];
+    let numero3 = valoresArray[2];
+
+    if(numero1 < numero2 && numero1 < numero2){res.innerHTML=`<input type="text" value="${numero1}">`}
+    else if(numero2 < numero1 && numero2 < numero3){res.innerHTML=`<input type="text" value="${numero2}">`}
+    else{res.innerHTML=`<input type="text" value="${numero3}">`}
+}
+
+function ex16(){
+    let res = document.getElementById("ex16");
+    let salario = prompt("Digite seu salario: ");
+
+    salario = ((parseInt(salario) * 1.07) - (parseInt(salario) * 1.05))+ parseInt(salario);
+
+    res.innerHTML = `Salario a receber: R$${salario},00`;
+}
+
+function ex17(){
+    let res = document.getElementById("ex17");
+    let numeros = prompt("Digite 10 numeros separados por espaço: ");
+    const myArray = numeros.split(" ");
+    let cont;
+
+    for(cont = 0; cont < 10; cont++){
+        if((myArray[cont] % 2) == 0){res.innerHTML+= `Par: ${myArray[cont]}<br><br>`}
+        else{res.innerHTML+= `Impar: ${myArray[cont]}<br><br>`}
+    }
+}
+
+function ex18(){
+    let res = document.getElementById("ex18");
+    let cont = 0, maior = 0, menor = 0;
+
+    while(cont < 10){
+        let numeros = prompt("Digite 10 idades: ");
+
+        if(numeros >= 18){maior++;}
+        else{menor++;}
+
+        cont++;
+    }
+    res.innerHTML+=`Maiores de idade: ${maior}<br>`
+    res.innerHTML+=`Menores de idade: ${menor}<br>`    
+}
+</script>
+</html>

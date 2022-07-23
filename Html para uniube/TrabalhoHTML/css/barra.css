@@ -1,0 +1,360 @@
+html,body{
+  margin: 0%;
+  overflow-y: scroll;
+}
+
+.hidden{
+  display: none;
+}
+
+.ula{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 98%;
+    background-color: rgb(20, 31, 38, .85);
+    font-size:x-large;
+    display:inline-block ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: fixed;
+    min-width: 14%;
+    max-width: 14%;
+    min-height: 15%;
+    overflow:hidden;
+  }
+
+  .ulb{
+    list-style-type:disc;
+    max-width: 100%;
+  }
+  
+  li a{
+    display: block;
+    color: #A0EAF2;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #5D8AA6;
+    color: white;
+    max-width: 100%;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(47, 77, 89, .70);
+    color: #A0EAF2;
+    max-width: 100%;
+  }
+
+  .animationbar {
+    width: auto;
+    height: min-content;
+    background: #2F4D59;
+    position:relative;
+    animation-name: example;
+    animation-duration: 1s;  
+    animation-fill-mode:forwards;
+  }
+
+  @keyframes example {
+    from {top: 0px;}
+    to {top: 0px; background-color: rgb(20, 31, 38, .100);}
+  }
+
+
+  body{
+    background-image: url(../imagens/plano1.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+  }
+
+  .homecontainer1{
+    position: absolute;
+    right: 6%;
+    top: 0%;
+    width: 75%;
+    height: 20%;
+    color: white;
+  }
+
+  .homecontainer1pg{
+    position: absolute;
+    left: 12%;
+    top: 0%;
+    width: 75%;
+    height: 20%;
+    color: white;
+  }
+
+  h1{
+    text-align: center;
+    background-color: rgb(20, 31, 38, .85);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size:250%;
+  }
+
+  .homecontainer2{
+    position: absolute;
+    margin-top: 0%;
+    background-color: rgb(20, 31, 38, .85);
+    width:40%;
+    color: white;
+    height:auto;
+    padding-bottom: 15%;
+  }
+
+  .homecontainer3{
+    position: absolute;
+    right: 0%;
+    margin-top: 0%;
+    background-color: rgb(20, 31, 38, .85);
+    width:55%;
+    color: white;
+    height: auto;
+    padding-bottom: 1.5%;
+  }
+
+  .container1{
+    position: absolute;
+    right: 6%;
+    top: 5%;
+    background-color:rgb(20, 31, 38, .85);
+    text-align: center; 
+    width: 75%;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .size1{
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .size2{
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .container2{
+    position: absolute;
+    top: 20%;
+    right: 6%;
+    width: 75%;
+    height: 50%;
+    background-color:rgb(20, 31, 38, .85);
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .nothing{
+    position: absolute;
+    top: 260%;
+    left: 65%;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  table{
+    border: solid #5D8AA6;
+    width: 100%;
+    height: 15%;
+    font-size: x-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .txt{
+    font-size:larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px;
+    text-indent: 15px;
+    text-align:justify;
+  }
+
+  .txt2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .altura{
+    top: 130%;
+    right: 0%;
+    left: 0%;
+    width: auto;
+    height: max-content;
+  }
+
+
+  .altura1{
+    top: 120%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .altura2{
+    top: 115%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .altura3{
+    top: 115%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .altura4{
+    top: 107%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .altura5{
+    top: 115%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .altura6{
+    top: 115%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .altura7{
+    top: 115%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .altura8{
+    top: 115%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .altura9{
+    top: 115%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .altura10{
+    top: 115%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  #password{
+    margin-left: 3%;
+    background-color: #2F4D59;
+    border: #A0EAF2;
+    color: white;
+  }
+  #e-mail{
+    margin-left: 1.5%;
+    background-color: #2F4D59;
+    border: #A0EAF2;
+    color: white;
+  }
+  #usuario{
+    margin-left: 7.5%;
+    background-color: #2F4D59;
+    border: #A0EAF2;
+    color: white;
+  }
+
+  .inputs{
+    margin-left: 5%;
+    font-size: x-large;
+    width: 50%;
+  }
+  #acessar{
+    height: 5%;
+    width: 15%;
+    margin-left: 15%;
+    background-color:#2F4D59;
+    color: white;
+    border-color:#A0EAF2;
+  }
+
+  #uniube{
+    text-align: center;
+    background-color:rgb(255, 255, 255, .75);
+    border:#5D8AA6 solid;
+    width: auto;
+  }
+
+
+  .face {
+    background: linear-gradient(45deg, rgb(160, 234, 242, .65), #141f26);
+    border: 2px solid #A0EAF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+
+    width: 300px;
+    height: 300px;
+    position: absolute;
+  }
+
+  .cube {
+    transform: rotateX(-30deg) rotateY(-40deg);
+    transform-style: preserve-3d;
+  }
+  
+  .face--front {
+    transform: translateZ(151px);
+  }
+
+  .face--right {
+    transform: rotateY(90deg) translateZ(151px);
+  }
+  
+  .face--top {
+    transform: rotateX(90deg) translateZ(151px);
+  }
+  
+  .alturacubo1{
+    top: 250%;
+    width:45%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .alturacubo2{
+    top: 250%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  .alturacubo3{
+    top: 250%;
+    width:100%;
+    left: 0%;
+    height: min-content;
+  }
+
+  #button{
+    background-color: rgb(20, 31, 38, .100);
+    border: #ffffff;
+    color: aqua;
+    cursor:pointer;
+    text-transform: uppercase;
+    font-size:large;
+  }
